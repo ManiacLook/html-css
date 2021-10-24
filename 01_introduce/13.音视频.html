@@ -26,9 +26,11 @@
 
     <!-- 除了通过src来指定外部文件的路径以外，还可以通过source来指定文件的路径 -->
     <audio controls>
-        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <!-- 支持的浏览器显示音频播放器，不支持的显示提示文字 -->
+        对不起，您的浏览器不支持播放音频！请升级浏览器！
         <source src="./source/audio.mp3">
         <source src="./source/audio.ogg">
+        <!-- embed用于IE浏览器 -->
         <embed src="./source/audio.mp3" type="audio/mp3" width="300" height="100">
     </audio>
 
